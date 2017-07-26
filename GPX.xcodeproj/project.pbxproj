@@ -12,6 +12,9 @@
 		BE0B627F1F28FBC300EF879A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0B627D1F28FBC300EF879A /* Main.storyboard */; };
 		BE0B62811F28FBC300EF879A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0B62801F28FBC300EF879A /* Assets.xcassets */; };
 		BE0B62841F28FBC300EF879A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0B62821F28FBC300EF879A /* LaunchScreen.storyboard */; };
+		BE0B628C1F2901D600EF879A /* default.gpx in Resources */ = {isa = PBXBuildFile; fileRef = BE0B628B1F2901D600EF879A /* default.gpx */; };
+		BE0B628E1F29023900EF879A /* default (1).gpx in Resources */ = {isa = PBXBuildFile; fileRef = BE0B628D1F29023900EF879A /* default (1).gpx */; };
+		BE0B62901F29075400EF879A /* default (2).gpx in Resources */ = {isa = PBXBuildFile; fileRef = BE0B628F1F29075400EF879A /* default (2).gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		BE0B62801F28FBC300EF879A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE0B62831F28FBC300EF879A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE0B62851F28FBC300EF879A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE0B628B1F2901D600EF879A /* default.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = default.gpx; sourceTree = "<group>"; };
+		BE0B628D1F29023900EF879A /* default (1).gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "default (1).gpx"; sourceTree = "<group>"; };
+		BE0B628F1F29075400EF879A /* default (2).gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "default (2).gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		BE0B62781F28FBC300EF879A /* GPX */ = {
 			isa = PBXGroup;
 			children = (
+				BE0B628B1F2901D600EF879A /* default.gpx */,
+				BE0B628F1F29075400EF879A /* default (2).gpx */,
+				BE0B628D1F29023900EF879A /* default (1).gpx */,
 				BE0B62791F28FBC300EF879A /* AppDelegate.swift */,
 				BE0B627B1F28FBC300EF879A /* ViewController.swift */,
 				BE0B627D1F28FBC300EF879A /* Main.storyboard */,
@@ -98,6 +107,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = K87XPR878Y;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,7 +139,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE0B62841F28FBC300EF879A /* LaunchScreen.storyboard in Resources */,
+				BE0B628C1F2901D600EF879A /* default.gpx in Resources */,
 				BE0B62811F28FBC300EF879A /* Assets.xcassets in Resources */,
+				BE0B628E1F29023900EF879A /* default (1).gpx in Resources */,
+				BE0B62901F29075400EF879A /* default (2).gpx in Resources */,
 				BE0B627F1F28FBC300EF879A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
