@@ -64,7 +64,7 @@
       <AdditionalOptions>
       </AdditionalOptions>
       <LocationScenarioReference
-         identifier = "../../GPX/ThreeLuresParque93.gpx"
+         identifier = "../../GPX/GymAtParque93.gpx"
          referenceType = "0">
       </LocationScenarioReference>
    </LaunchAction>
