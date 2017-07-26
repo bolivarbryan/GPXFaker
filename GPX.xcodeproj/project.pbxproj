@@ -28,6 +28,7 @@
 		BE0B628B1F2901D600EF879A /* default.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = default.gpx; sourceTree = "<group>"; };
 		BE0B628D1F29023900EF879A /* default (1).gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "default (1).gpx"; sourceTree = "<group>"; };
 		BE0B628F1F29075400EF879A /* default (2).gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "default (2).gpx"; sourceTree = "<group>"; };
+		C01112781F291EC6004954F1 /* ThreeLuresParque93.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ThreeLuresParque93.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +61,7 @@
 		BE0B62781F28FBC300EF879A /* GPX */ = {
 			isa = PBXGroup;
 			children = (
-				BE0B628B1F2901D600EF879A /* default.gpx */,
-				BE0B628F1F29075400EF879A /* default (2).gpx */,
-				BE0B628D1F29023900EF879A /* default (1).gpx */,
+				C01112771F291E90004954F1 /* Places */,
 				BE0B62791F28FBC300EF879A /* AppDelegate.swift */,
 				BE0B627B1F28FBC300EF879A /* ViewController.swift */,
 				BE0B627D1F28FBC300EF879A /* Main.storyboard */,
@@ -71,6 +70,17 @@
 				BE0B62851F28FBC300EF879A /* Info.plist */,
 			);
 			path = GPX;
+			sourceTree = "<group>";
+		};
+		C01112771F291E90004954F1 /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				BE0B628B1F2901D600EF879A /* default.gpx */,
+				BE0B628F1F29075400EF879A /* default (2).gpx */,
+				BE0B628D1F29023900EF879A /* default (1).gpx */,
+				C01112781F291EC6004954F1 /* ThreeLuresParque93.gpx */,
+			);
+			name = Places;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,7 +115,7 @@
 				TargetAttributes = {
 					BE0B62751F28FBC300EF879A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = K87XPR878Y;
+						DevelopmentTeam = 58YKL7WW5K;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -280,7 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K87XPR878Y;
+				DEVELOPMENT_TEAM = 58YKL7WW5K;
 				INFOPLIST_FILE = GPX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bolivarbryan.GPX;
@@ -293,7 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K87XPR878Y;
+				DEVELOPMENT_TEAM = 58YKL7WW5K;
 				INFOPLIST_FILE = GPX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bolivarbryan.GPX;
@@ -321,6 +331,7 @@
 				BE0B628A1F28FBC300EF879A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
