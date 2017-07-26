@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="bIq-G9-Kdx">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <plugIn identifier="com.apple.MapKitIBPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="bv7-fB-yDA">
+            <objects>
+                <viewController title="Home" id="bIq-G9-Kdx" customClass="HomeViewController" customModule="GPX_OS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="rfa-6B-lV3">
+                        <rect key="frame" x="0.0" y="0.0" width="714" height="586"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <mapView mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="o1h-R6-rck">
+                                <rect key="frame" x="0.0" y="0.0" width="514" height="586"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bIq-G9-Kdx" id="kBb-A6-znD"/>
+                                </connections>
+                            </mapView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2T2-Zq-S0a">
+                                <rect key="frame" x="516" y="538" width="196" height="32"/>
+                                <buttonCell key="cell" type="push" title="Open XCode Project" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JWo-QE-DKE">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7dZ-63-inV">
+                                <rect key="frame" x="516" y="505" width="196" height="32"/>
+                                <buttonCell key="cell" type="push" title="Export" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Nzh-qk-hEt">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxs-tg-yHz">
+                                <rect key="frame" x="520" y="487" width="188" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="X: --" id="o8U-NW-7OQ">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhc-Ei-cOs">
+                                <rect key="frame" x="520" y="462" width="188" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Y: --" id="c53-hh-ugh">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="o1h-R6-rck" firstAttribute="leading" secondItem="rfa-6B-lV3" secondAttribute="leading" id="6db-33-Eo2"/>
+                            <constraint firstItem="bhc-Ei-cOs" firstAttribute="leading" secondItem="o1h-R6-rck" secondAttribute="trailing" constant="8" id="B58-1d-WFt"/>
+                            <constraint firstItem="7dZ-63-inV" firstAttribute="top" secondItem="2T2-Zq-S0a" secondAttribute="bottom" constant="12" id="CxI-7r-MMb"/>
+                            <constraint firstAttribute="trailing" secondItem="7dZ-63-inV" secondAttribute="trailing" constant="8" id="G9c-5o-k6m"/>
+                            <constraint firstAttribute="trailing" secondItem="o1h-R6-rck" secondAttribute="trailing" constant="200" id="IL9-Ce-XOy"/>
+                            <constraint firstItem="2T2-Zq-S0a" firstAttribute="top" secondItem="rfa-6B-lV3" secondAttribute="top" constant="20" id="IWm-Je-UKC"/>
+                            <constraint firstItem="bhc-Ei-cOs" firstAttribute="top" secondItem="zxs-tg-yHz" secondAttribute="bottom" constant="8" id="KNy-fv-8AO"/>
+                            <constraint firstItem="zxs-tg-yHz" firstAttribute="top" secondItem="7dZ-63-inV" secondAttribute="bottom" constant="8" id="Mzz-we-XoU"/>
+                            <constraint firstAttribute="trailing" secondItem="bhc-Ei-cOs" secondAttribute="trailing" constant="8" id="bIX-cV-dzt"/>
+                            <constraint firstItem="o1h-R6-rck" firstAttribute="top" secondItem="rfa-6B-lV3" secondAttribute="top" id="bQ7-6m-29J"/>
+                            <constraint firstAttribute="bottom" secondItem="o1h-R6-rck" secondAttribute="bottom" id="jJo-Vj-Xi5"/>
+                            <constraint firstItem="zxs-tg-yHz" firstAttribute="leading" secondItem="o1h-R6-rck" secondAttribute="trailing" constant="8" id="sKs-oh-RGd"/>
+                            <constraint firstAttribute="trailing" secondItem="zxs-tg-yHz" secondAttribute="trailing" constant="8" id="vJA-ze-9yc"/>
+                            <constraint firstItem="7dZ-63-inV" firstAttribute="leading" secondItem="o1h-R6-rck" secondAttribute="trailing" constant="8" id="vgJ-Pa-xnw"/>
+                            <constraint firstItem="2T2-Zq-S0a" firstAttribute="leading" secondItem="o1h-R6-rck" secondAttribute="trailing" constant="8" id="wV1-JO-zjG"/>
+                            <constraint firstAttribute="trailing" secondItem="2T2-Zq-S0a" secondAttribute="trailing" constant="8" id="yDu-n0-vd2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="o1h-R6-rck" id="Fmz-Ed-SoI"/>
+                    </connections>
+                </viewController>
+                <customObject id="6dF-pN-One" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="397" y="42"/>
+        </scene>
+    </scenes>
+</document>
