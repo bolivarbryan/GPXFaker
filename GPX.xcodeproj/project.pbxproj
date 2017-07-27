@@ -42,6 +42,7 @@
 		BE0B62BE1F29516D00EF879A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "GPX-OS/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
 		BE8D6D4A1F2A983100A67428 /* GPX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPX-Bridging-Header.h"; sourceTree = "<group>"; };
 		BE8D6D4E1F2AA91300A67428 /* file.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = file.gpx; path = ../../../file.gpx; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

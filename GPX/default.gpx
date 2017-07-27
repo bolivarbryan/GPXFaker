@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <gpx version="1.1" creator="gpx-poi.com">
     <wpt lat="5.15891226444155" lon="-74.1581520053429">
@@ -33,3 +34,17 @@
         <name>mmm</name>
     </wpt>
 </gpx>
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<gpx
+xmlns="http://www.topografix.com/GPX/1/1"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
+version="1.1" 
+creator="gpx-poi.com">
+   <wpt lat="4.703812" lon="-74.030595">
+      <time>2017-07-26T16:58:51Z</time>
+      <name>mmm</name>
+   </wpt>
+</gpx>
+>>>>>>> a0cb4281fa2eaa79fccbb43f8d67261b7487a258
