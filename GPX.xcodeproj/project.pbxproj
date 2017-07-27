@@ -30,6 +30,8 @@
 		BE0B628F1F29075400EF879A /* default (2).gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "default (2).gpx"; sourceTree = "<group>"; };
 		C0110A211F2A37AC00C6EDE4 /* GymAlFrenteOffimio.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GymAlFrenteOffimio.gpx; sourceTree = "<group>"; };
 		C0110A221F2A37FC00C6EDE4 /* InemKennedy.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = InemKennedy.gpx; sourceTree = "<group>"; };
+		C0110A231F2A3E3300C6EDE4 /* CercaAParqueMadrigal.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CercaAParqueMadrigal.gpx; sourceTree = "<group>"; };
+		C0110A241F2A679400C6EDE4 /* AgustinCodazzi.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AgustinCodazzi.gpx; sourceTree = "<group>"; };
 		C01112781F291EC6004954F1 /* ThreeLuresParque93.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ThreeLuresParque93.gpx; sourceTree = "<group>"; };
 		C01112791F2921CE004954F1 /* GymAtParque93.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GymAtParque93.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,8 @@
 				C01112791F2921CE004954F1 /* GymAtParque93.gpx */,
 				C0110A211F2A37AC00C6EDE4 /* GymAlFrenteOffimio.gpx */,
 				C0110A221F2A37FC00C6EDE4 /* InemKennedy.gpx */,
+				C0110A231F2A3E3300C6EDE4 /* CercaAParqueMadrigal.gpx */,
+				C0110A241F2A679400C6EDE4 /* AgustinCodazzi.gpx */,
 			);
 			name = Places;
 			sourceTree = "<group>";
