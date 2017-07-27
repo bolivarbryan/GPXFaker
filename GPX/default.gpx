@@ -1,12 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<gpx
-xmlns="http://www.topografix.com/GPX/1/1"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd"
-version="1.1" 
-creator="gpx-poi.com">
-   <wpt lat="4.705840" lon="-74.028668">
-      <time>2017-07-26T16:58:51Z</time>
-      <name>mmm</name>
-   </wpt>
+<gpx version="1.1" creator="gpx-poi.com">
+    <wpt lat="5.15891226444155" lon="-74.1581520053429">
+        <time>2017-07-27T22:59:29Z</time>
+        <name>mmm</name>
+    </wpt>
+    <wpt lat="5.15578449291579" lon="-74.1564833044304">
+        <time>2017-07-27T22:59:34Z</time>
+        <name>mmm</name>
+    </wpt>
+    <wpt lat="5.15203309217752" lon="-74.1588164048669">
+        <time>2017-07-27T22:59:39Z</time>
+        <name>mmm</name>
+    </wpt>
+    <wpt lat="5.14631531438681" lon="-74.1605991308885">
+        <time>2017-07-27T22:59:44Z</time>
+        <name>mmm</name>
+    </wpt>
+    <wpt lat="5.1422427577464" lon="-74.1578258017464">
+        <time>2017-07-27T22:59:49Z</time>
+        <name>mmm</name>
+    </wpt>
+    <wpt lat="5.13568832640858" lon="-74.1569098222991">
+        <time>2017-07-27T22:59:54Z</time>
+        <name>mmm</name>
+    </wpt>
+    <wpt lat="5.13338127642923" lon="-74.1577589399854">
+        <time>2017-07-27T22:59:59Z</time>
+        <name>mmm</name>
+    </wpt>
+    <wpt lat="5.13070321684746" lon="-74.1589538282414">
+        <time>2017-07-27T23:00:04Z</time>
+        <name>mmm</name>
+    </wpt>
 </gpx>

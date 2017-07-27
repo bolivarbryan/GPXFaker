@@ -13,7 +13,22 @@ import MapKit
 class HomeViewController: NSViewController, NSGestureRecognizerDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
-    let initialLocation = CLLocation(latitude: 21.282778, longitude: -157.829444)
+
+    @IBOutlet weak var labelY: NSTextField!
+    @IBOutlet weak var labelX: NSTextField!
+
+    var annotations = [Artwork]()
+
+    @IBOutlet weak var secondsPicker: NSPopUpButtonCell!
+    @IBOutlet weak var clear: NSButton!
+
+    @IBAction func clearData(_ sender: Any) {
+        self.annotations.removeAll()
+        mapView.removeAnnotations(mapView.annotations)
+        labelY.stringValue = "--"
+        labelX.stringValue = "--"
+    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,24 +39,36 @@ class HomeViewController: NSViewController, NSGestureRecognizerDelegate {
         gestureRecognizer.numberOfClicksRequired = 1
         gestureRecognizer.delegate = self
         mapView.addGestureRecognizer(gestureRecognizer)
-
     }
-
     
     func handleTap(gestureReconizer: NSClickGestureRecognizer) {
         let location = gestureReconizer.location(in: mapView)
         let coordinate = mapView.convert(location,toCoordinateFrom: mapView)
 
-        mapView.removeAnnotations(mapView.annotations )
+        mapView.removeAnnotations(mapView.annotations)
 
-        let artwork = Artwork(title: "King David Kalakaua",
-                              locationName: "Waikiki Gateway Park",
-                              discipline: "Sculpture",
+        let artwork = Artwork(title: "",
+                              locationName: "",
+                              discipline: "",
                               coordinate: coordinate)
-        mapView.addAnnotation(artwork)
-        mapView.delegate = self
-        centerMapOnLocation(location: initialLocation)
 
+        annotations.append(artwork)
+
+        mapView.delegate = self
+        var locations = annotations.map { $0.coordinate }
+        let polyline = MKPolyline(coordinates: &locations, count: locations.count)
+        mapView?.add(polyline)
+
+
+        mapView.addAnnotations(annotations)
+
+
+        mapView.showAnnotations(annotations, animated: true)
+        
+        labelX.stringValue = "\(coordinate.latitude)"
+        labelY.stringValue = "\(coordinate.longitude)"
+
+        export()
     }
 
 
@@ -51,11 +78,7 @@ class HomeViewController: NSViewController, NSGestureRecognizerDelegate {
 
 
     let regionRadius: CLLocationDistance = 1000
-    func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                                                                  regionRadius * 2.0, regionRadius * 2.0)
-        mapView.setRegion(coordinateRegion, animated: true)
-    }
+
 
     // MARK: - location manager to authorize user location for Maps app
     var location = CLLocationManager()
@@ -63,6 +86,32 @@ class HomeViewController: NSViewController, NSGestureRecognizerDelegate {
         location.delegate = self
         location.startUpdatingLocation()
         mapView.showsUserLocation = true
+    }
+
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+        let renderer = MKPolylineRenderer(overlay: overlay)
+        renderer.strokeColor = NSColor.red
+        renderer.lineWidth = 4.0
+
+        return renderer
+    }
+
+    func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        if overlay is MKCircle {
+            let renderer = MKCircleRenderer(overlay: overlay)
+            renderer.fillColor = NSColor.black.withAlphaComponent(0.5)
+            renderer.strokeColor = NSColor.blue
+            renderer.lineWidth = 2
+            return renderer
+
+        } else if overlay is MKPolyline {
+            let renderer = MKPolylineRenderer(overlay: overlay)
+            renderer.strokeColor = NSColor.orange
+            renderer.lineWidth = 3
+            return renderer
+        }
+        
+        return MKOverlayRenderer()
     }
 }
 
@@ -76,15 +125,46 @@ extension HomeViewController: MKMapViewDelegate, CLLocationManagerDelegate {
                 dequeuedView.annotation = annotation
                 view = dequeuedView
             } else {
-                // 3
                 view = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 view.canShowCallout = true
                 view.calloutOffset = CGPoint(x: -5, y: 5)
-                //view.rightCalloutAccessoryView = UIButton.buttonWithType(.DetailDisclosure) as! UIView
             }
             return view
         }
         return nil
+    }
+
+    func export(){
+        let file = "file.gpx"
+
+        var text = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<gpx version=\"1.1\" creator=\"gpx-poi.com\">\n"
+
+
+        let isoFormatter = ISO8601DateFormatter()
+
+        let numberFormatter = NumberFormatter()
+
+        var i = 10.0
+        for annotation in annotations {
+            i = i + (numberFormatter.number(from: (self.secondsPicker.selectedItem?.title)!)?.doubleValue)!
+            text = text + "<wpt lat=\"\(annotation.coordinate.latitude)\" lon=\"\(annotation.coordinate.longitude)\">\n<time>\(isoFormatter.string(from: Date().addingTimeInterval(i)))</time>\n<name>mmm</name>\n</wpt>\n"
+        }
+
+        text = text + "</gpx>"
+
+        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+
+            let path = dir.appendingPathComponent(file)
+
+            do {
+                try text.write(to: path, atomically: false, encoding: String.Encoding.utf8)
+            }
+            catch {}
+            do {
+                let text2 = try String(contentsOf: path, encoding: String.Encoding.utf8)
+            }
+            catch {}
+        }
     }
 
 }
@@ -93,6 +173,7 @@ class Artwork: NSObject, MKAnnotation {
     let locationName: String
     let discipline: String
     let coordinate: CLLocationCoordinate2D
+    let date = Date()
     var title: String?
 
     init(title: String, locationName: String, discipline: String, coordinate: CLLocationCoordinate2D) {

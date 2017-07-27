@@ -13,14 +13,14 @@
 		BE0B62811F28FBC300EF879A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0B62801F28FBC300EF879A /* Assets.xcassets */; };
 		BE0B62841F28FBC300EF879A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0B62821F28FBC300EF879A /* LaunchScreen.storyboard */; };
 		BE0B628C1F2901D600EF879A /* default.gpx in Resources */ = {isa = PBXBuildFile; fileRef = BE0B628B1F2901D600EF879A /* default.gpx */; };
-		BE0B628E1F29023900EF879A /* default (1).gpx in Resources */ = {isa = PBXBuildFile; fileRef = BE0B628D1F29023900EF879A /* default (1).gpx */; };
-		BE0B62901F29075400EF879A /* default (2).gpx in Resources */ = {isa = PBXBuildFile; fileRef = BE0B628F1F29075400EF879A /* default (2).gpx */; };
 		BE0B62AE1F29502A00EF879A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0B62AD1F29502A00EF879A /* AppDelegate.swift */; };
 		BE0B62B01F29502A00EF879A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0B62AF1F29502A00EF879A /* ViewController.swift */; };
 		BE0B62B21F29502A00EF879A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0B62B11F29502A00EF879A /* Assets.xcassets */; };
 		BE0B62B51F29502A00EF879A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0B62B31F29502A00EF879A /* Main.storyboard */; };
 		BE0B62BD1F29512D00EF879A /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0B62BB1F29504900EF879A /* Storyboard.storyboard */; };
 		BE0B62C01F29517100EF879A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0B62BE1F29516D00EF879A /* HomeViewController.swift */; };
+		BE8D6D4F1F2AA91300A67428 /* file.gpx in Resources */ = {isa = PBXBuildFile; fileRef = BE8D6D4E1F2AA91300A67428 /* file.gpx */; };
+		BE8D6D501F2AA91300A67428 /* file.gpx in Resources */ = {isa = PBXBuildFile; fileRef = BE8D6D4E1F2AA91300A67428 /* file.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +32,6 @@
 		BE0B62831F28FBC300EF879A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE0B62851F28FBC300EF879A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE0B628B1F2901D600EF879A /* default.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = default.gpx; sourceTree = "<group>"; };
-		BE0B628D1F29023900EF879A /* default (1).gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "default (1).gpx"; sourceTree = "<group>"; };
-		BE0B628F1F29075400EF879A /* default (2).gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "default (2).gpx"; sourceTree = "<group>"; };
 		BE0B62AB1F29502A00EF879A /* GPX-OS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPX-OS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0B62AD1F29502A00EF879A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE0B62AF1F29502A00EF879A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,8 +40,8 @@
 		BE0B62B61F29502A00EF879A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE0B62BB1F29504900EF879A /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard.storyboard; path = "GPX-OS/Storyboard.storyboard"; sourceTree = SOURCE_ROOT; };
 		BE0B62BE1F29516D00EF879A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "GPX-OS/HomeViewController.swift"; sourceTree = SOURCE_ROOT; };
-		C01112781F291EC6004954F1 /* ThreeLuresParque93.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ThreeLuresParque93.gpx; sourceTree = "<group>"; };
-		C01112791F2921CE004954F1 /* GymAtParque93.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = GymAtParque93.gpx; sourceTree = "<group>"; };
+		BE8D6D4A1F2A983100A67428 /* GPX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GPX-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE8D6D4E1F2AA91300A67428 /* file.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = file.gpx; path = ../../../file.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +83,7 @@
 		BE0B62781F28FBC300EF879A /* GPX */ = {
 			isa = PBXGroup;
 			children = (
+				BE8D6D491F2A980E00A67428 /* Exporter */,
 				C011127A1F29224B004954F1 /* Tours */,
 				C01112771F291E90004954F1 /* Places */,
 				BE0B62791F28FBC300EF879A /* AppDelegate.swift */,
@@ -120,14 +119,19 @@
 			path = ../GPX;
 			sourceTree = "<group>";
 		};
+		BE8D6D491F2A980E00A67428 /* Exporter */ = {
+			isa = PBXGroup;
+			children = (
+				BE8D6D4A1F2A983100A67428 /* GPX-Bridging-Header.h */,
+			);
+			name = Exporter;
+			sourceTree = "<group>";
+		};
 		C01112771F291E90004954F1 /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				BE8D6D4E1F2AA91300A67428 /* file.gpx */,
 				BE0B628B1F2901D600EF879A /* default.gpx */,
-				BE0B628F1F29075400EF879A /* default (2).gpx */,
-				BE0B628D1F29023900EF879A /* default (1).gpx */,
-				C01112781F291EC6004954F1 /* ThreeLuresParque93.gpx */,
-				C01112791F2921CE004954F1 /* GymAtParque93.gpx */,
 			);
 			name = Places;
 			sourceTree = "<group>";
@@ -189,6 +193,7 @@
 					BE0B62751F28FBC300EF879A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = K87XPR878Y;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -228,10 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE0B62841F28FBC300EF879A /* LaunchScreen.storyboard in Resources */,
+				BE8D6D4F1F2AA91300A67428 /* file.gpx in Resources */,
 				BE0B628C1F2901D600EF879A /* default.gpx in Resources */,
 				BE0B62811F28FBC300EF879A /* Assets.xcassets in Resources */,
-				BE0B628E1F29023900EF879A /* default (1).gpx in Resources */,
-				BE0B62901F29075400EF879A /* default (2).gpx in Resources */,
 				BE0B627F1F28FBC300EF879A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE0B62B21F29502A00EF879A /* Assets.xcassets in Resources */,
+				BE8D6D501F2AA91300A67428 /* file.gpx in Resources */,
 				BE0B62B51F29502A00EF879A /* Main.storyboard in Resources */,
 				BE0B62BD1F29512D00EF879A /* Storyboard.storyboard in Resources */,
 			);
@@ -397,11 +402,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = K87XPR878Y;
 				INFOPLIST_FILE = GPX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bolivarbryan.GPX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GPX/GPX-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -410,11 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = K87XPR878Y;
 				INFOPLIST_FILE = GPX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bolivarbryan.GPX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GPX/GPX-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -483,6 +493,7 @@
 				BE0B62B81F29502A00EF879A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
