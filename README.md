@@ -16,6 +16,5 @@ Cool Uses
 
 * Car tracking App
 * Pokemon Go Location Simulation
-* Tinder Location Simulation
 
 Enjoy
